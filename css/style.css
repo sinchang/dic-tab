@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-align-items: center;
+  -webkit-flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -webkit-justify-content: center;
+}
+
+body,
+input {
+  display: -webkit-flex;
+  font-family: 'Avenir', 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.word {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.explain {
+  margin-left: 5px;
+}
+
+.wrap {
+  margin-top: -80px;
+}
+
+.skip {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
