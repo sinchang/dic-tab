@@ -1,7 +1,7 @@
 const list = document.getElementById('list')
 const addBtn = document.getElementById('addBtn')
 const wordTextarea = document.getElementById('wordTextarea')
-let globalWords = ''
+let globalWords = []
 
 main()
 
@@ -15,7 +15,7 @@ addBtn.addEventListener('click', function() {
 
 function main() {
   chrome.storage.sync.get(['englishTabWords'], function(result) {
-    globalWords = result.englishTabWords
+    globalWords = result.englishTabWords || []
     renderList()
   })
 }
