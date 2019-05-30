@@ -1,5 +1,5 @@
 {
-  "name": "Dic Tab",
+  "name": "English Tab",
   "description": "",
   "version": "1.0",
   "background": {
@@ -9,6 +9,11 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": ["storage"],
   "manifest_version": 2,
   "browser_action": {
     "default_icon": {
