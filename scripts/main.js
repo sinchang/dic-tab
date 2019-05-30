@@ -31,7 +31,7 @@ function skip(word) {
 
 function main() {
   chrome.storage.sync.get(['englishTabWords'], function(result) {
-    if (!result.englishTabWords.length) return
+    if (!result.englishTabWords.length) return explainEle.innerHTML = ''
     const words = result.englishTabWords
     const word = words[Math.floor(Math.random() * words.length)]
 
