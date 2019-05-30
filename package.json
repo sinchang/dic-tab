@@ -1,5 +1,5 @@
 {
-  "name": "dic-tab",
+  "name": "english-tab",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sinchang/dic-tab.git"
+    "url": "git+https://github.com/sinchang/english-tab.git"
   },
   "keywords": [],
   "author": "sinchang <sinchangwen@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sinchang/dic-tab/issues"
+    "url": "https://github.com/sinchang/english-tab/issues"
   },
-  "homepage": "https://github.com/sinchang/dic-tab#readme"
+  "homepage": "https://github.com/sinchang/english-tab#readme"
 }

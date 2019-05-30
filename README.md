@@ -1,4 +1,4 @@
-# Dic Tab
+# English Tab
 
 ## Screenshot
 
