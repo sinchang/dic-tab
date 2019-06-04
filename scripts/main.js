@@ -18,7 +18,7 @@ function translateWord(word) {
 
 function skip(word) {
   chrome.storage.sync.get(['englishTabWords'], function(result) {
-    const words = result.englishTabWords
+    const words = result.englishTabWords || []
     words.forEach((item, index) => {
       if (item === word) words.splice(index, 1)
     })
@@ -31,7 +31,7 @@ function skip(word) {
 
 function main() {
   chrome.storage.sync.get(['englishTabWords'], function(result) {
-    if (!result.englishTabWords.length) return explainEle.innerHTML = ''
+    if (!result.englishTabWords || !result.englishTabWords.length) return explainEle.innerHTML = ''
     const words = result.englishTabWords
     const word = words[Math.floor(Math.random() * words.length)]
 
